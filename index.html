@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Jannat Apu!</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 20px;
+            padding: 10px;
+        }
+        .card {
+            background-color: #ffe0b2;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            width: 100%;
+            max-width: 300px;
+            height: 400px;
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .image {
+            width: 100%;
+            border-radius: 10px;
+            transition: opacity 0.3s ease;
+        }
+        .message, .hover-message {
+            font-size: 16px;
+            color: #333;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 80%;
+        }
+        .message {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        .hover-message {
+            opacity: 0;
+            color: #ff5722;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+        .card:hover .message {
+            opacity: 0;
+        }
+        .card:hover .hover-message {
+            opacity: 1;
+        }
+        .button {
+            margin-top: 30px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff8a75;
+        }
+        .cake-gif {
+            display: none;
+            margin-top: 20px;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+                height: auto;
+                margin: 10px 0;
+            }
+            .message, .hover-message {
+                font-size: 14px;
+                top: 65%;
+            }
+            .button {
+                width: 80%;
+                padding: 12px 0;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="image/1000045171.jpg" alt="Birthday Photo 1" class="image">
+            <p class="message">Happy Birthday, Jannat Apu! 🎂 You are a true gem, may your day sparkle just like you do!</p>
+            <p class="hover-message">Surprise! You're even more awesome than you think!</p>
+        </div>
+        <div class="card">
+            <img src="image/1000027646.jpg" alt="Birthday Photo 2" class="image">
+            <p class="message">Wishing you a day full of love, laughter, and cherished memories. Enjoy every moment!</p>
+            <p class="hover-message">Smile! Today is your day to shine brighter than ever!</p>
+        </div>
+        <div class="card">
+            <img src="image/1000046829.jpg" alt="Birthday Photo 3" class="image">
+            <p class="message">Another year, another chapter! Keep being the amazing person that you are. Happy Birthday!</p>
+            <p class="hover-message">Always remember: you’re loved more than words can say!</p>
+        </div>
+        <button class="button" onclick="showCake()">Let's Celebrate!</button>
+        <div class="cake-gif">
+            <img src="image/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.webp" alt="Celebration Cake" style="width: 100%; max-width: 400px;">
+        </div>
+    </div>
+
+    <script>
+        function showCake() {
+            document.querySelector('.cake-gif').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
